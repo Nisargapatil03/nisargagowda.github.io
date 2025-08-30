@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --primary: #00adb5;
+      --dark: #222831;
+      --light: #eeeeee;
+      --text: #393e46;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;          /* Circle photo */
+  border: 5px solid var(--primary);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Glow shadow */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.08);      /* Zoom effect on hover */
+  box-shadow: 0 6px 20px rgba(0, 173, 181, 0.6); /* Colored glow */
+}
+
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--primary);
+    }
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .skill, .project {
+      flex: 1 1 250px;
+      background: #fafafa;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      transition: transform 0.2s;
+    }
+    .skill:hover, .project:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary);
+    }
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    .contact a, .resume-btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      transition: all 0.3s;
+    }
+    .contact a:hover, .resume-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--dark);
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header / Hero -->
+  <header>
+    <img src="C:\Users\91914\Desktop\NIsarga\New folder\WhatsApp Image 2025-08-25 at 15.29.44_4979a381.jpg" alt="Profile Photo">
+    <h1>NISARGA PATIL</h1>
+    <p>Aspiring Software Engineer | Java & DSA Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Computer Science student passionate about problem-solving and building impactful software.
+      Currently focusing on Java, Data Structures & Algorithms, and exploring Generative AI.  
+      I enjoy working on projects that combine AI with real-world applications like finance, healthcare, and security.
+    </p>
+    <a href="C:\Users\91914\Downloads\cloud\nisarga_resume_V1.pdf" class="resume-btn" target="_blank">📄 View Resume</a>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Java (Core + DSA)</div>
+      <div class="skill">Python</div>
+      <div class="skill">HTML, CSS, JavaScript</div>
+      <div class="skill">SQL / MySQL</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">Operating System</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Computer Networks</div>
+      <div class="skill">Generative AI (LLMs)</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Finance AI Agent</h3>
+        <p>LLM-based finance assistant that helps analyze data and provide insights.</p>
+        <a href="#">GitHub Repo</a>
+      </div>
+      <div class="project">
+        <h3>Website Vulnerability Scanner</h3>
+        <p>Tool to find common website vulnerabilities and improve security.</p>
+        <a href="#">GitHub Repo</a>
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>
+      🎓 B.E. in Computer Science, [Bapuji Institute of Engineering and Technology], 7th Semester  
+      📊 CGPA: 8.2
+    </p>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+           <li>🎖️ Certification in Java Programming and Machine Learning</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <a href="mailto:your.email@example.com">📧 Email</a>
+    <a href="https://github.com/yourusername">💻 GitHub</a>
+    <a href="https://linkedin.com/in/yourprofile">🔗 LinkedIn</a>
+   
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nisarga patil| Made with ❤️</p>
+  </footer>
+</body>
+</html>
